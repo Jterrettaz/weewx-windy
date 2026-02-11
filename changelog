@@ -1,3 +1,6 @@
+0.8 11feb2026
+* Ported to Windy API v2
+
 0.7 08may2020
 * Ported to WeeWX V4 logging facility. -tk
 
