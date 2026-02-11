@@ -18,7 +18,7 @@ wget -O weewx-windy.zip https://github.com/Jterrettaz/weewx-windy/archive/master
 
 wee_extension --install weewx-windy.zip     for weewx V4 and earlier
 
-weectl extension install weewx-windy.zip
+weectl extension install weewx-windy.zip    for weewx V5
 
 3) enter parameters in the weewx configuration file
 
