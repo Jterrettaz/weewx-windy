@@ -166,7 +166,7 @@ class WindyThread(weewx.restx.RESTThread):
         if 'barometer' in record_m :
             parts['baromin'] = record_m ['barometer']
         if 'hourRain' in record_m :
-            parts['hourlyrainin'] = record_m ['hourRain']  # mm in past hour
+            parts['hourlyrainin'] = record_m ['hourRain'] 
         if 'UV' in record_m:
             parts['uv'] = record_m['UV']
         if 'radiation' in record_m:
