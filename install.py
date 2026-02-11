@@ -20,6 +20,6 @@ class WindyInstaller(ExtensionInstaller):
                 'StdRESTful': {
                     'Windy': {
                         'station_id': 'replace_me',
-                        'station_password': 'replace_me}}},
+                        'station_password': 'replace_me'}}},
             files=[('bin/user', ['bin/user/windy.py'])]
             )
