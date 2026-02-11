@@ -1,8 +1,10 @@
 windy - weewx extension that sends data to windy.com
 Copyright 2019-2020 Matthew Wall
+
+Modified by Jacques Terrettaz to comply with Windy API v2
 Distributed under the terms of the GNU Public License (GPLv3)
 
-You will need an API key from windy.com
+You will need your station id and station password from windy.com
 
   https://stations.windy.com/
 
@@ -20,7 +22,8 @@ wee_extension --install weewx-windy.zip
 
 [StdRESTful]
     [[Windy]]
-        api_key = API_KEY
+        station_id = xxxxxxx
+        station_password = yyyyyyyyyyyyyy
 
 4) restart weewx
 
