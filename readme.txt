@@ -12,20 +12,21 @@ Installation instructions:
 
 1) download
 
-wget -O weewx-windy.zip https://github.com/matthewwall/weewx-windy/archive/master.zip
+wget -O weewx-windy.zip https://github.com/Jterrettaz/weewx-windy/archive/master.zip
 
 2) run the installer
 
-wee_extension --install weewx-windy.zip
+wee_extension --install weewx-windy.zip     for weewx V4 and earlier
+
+weectl extension install weewx-windy.zip
 
 3) enter parameters in the weewx configuration file
 
 [StdRESTful]
     [[Windy]]
-        station_id = xxxxxxx
-        station_password = yyyyyyyyyyyyyy
+        station_id = replace_me
+        station_password = replace_me
 
 4) restart weewx
 
-sudo /etc/init.d/weewx stop
-sudo /etc/init.d/weewx start
+
