@@ -150,23 +150,24 @@ class WindyThread(weewx.restx.RESTThread):
         parts['ts'] = record['dateTime']
         parts['stationId'] = self.station
         if 'dateTime' in record_m :
-            parts['ts'] = record_m ['dateTime']
+            parts['ts'] = record_m['dateTime']
         if 'outTemp' in record_m :
-            parts['tempf'] = record_m ['outTemp']
+            parts['tempf'] = record_m['outTemp']
         if 'windSpeed' in record_m :
-            parts['windspeedmph'] = record_m ['windSpeed']
+            parts['windspeedmph'] = record_m['windSpeed']
         if 'windDir' in record_m :
-            parts['winddir'] = int(record_m ['windDir'])
+            if record_m['windDir'] is not None:
+                parts['winddir'] = int(record_m['windDir'])
         if 'windGust' in record_m :
-            parts['windgustmph'] = record_m ['windGust']
+            parts['windgustmph'] = record_m['windGust']
         if 'outHumidity' in record_m :
-            parts['rh'] = record_m ['outHumidity']
+            parts['rh'] = record_m['outHumidity']
         if 'dewpoint' in record_m :
-            parts['dewptf'] = record_m ['dewpoint']
+            parts['dewptf'] = record_m['dewpoint']
         if 'barometer' in record_m :
-            parts['baromin'] = record_m ['barometer']
+            parts['baromin'] = record_m['barometer']
         if 'hourRain' in record_m :
-            parts['hourlyrainin'] = record_m ['hourRain'] 
+            parts['hourlyrainin'] = record_m['hourRain'] 
         if 'UV' in record_m:
             parts['uv'] = record_m['UV']
         if 'radiation' in record_m:
