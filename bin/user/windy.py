@@ -161,7 +161,7 @@ class WindyThread(weewx.restx.RESTThread):
         if 'windSpeed' in record_m :
             parts['windspeedmph'] = record_m ['windSpeed']
         if 'windDir' in record_m :
-            parts['winddir'] = record_m ['windDir']
+            parts['winddir'] = int(record_m ['windDir'])
         if 'windGust' in record_m :
             parts['windgustmph'] = record_m ['windGust']
         if 'outHumidity' in record_m :
