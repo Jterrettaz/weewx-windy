@@ -8,6 +8,8 @@ You will need your station id and station password from windy.com
 
   https://stations.windy.com/
 
+This extension will work with weewx version equal or greater than V3.8.0
+
 Installation instructions:
 
 1) download
